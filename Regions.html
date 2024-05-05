@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+  <title>Unveiling Renewable energy capacity across Indian States</title>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- lightbox Gallery-->
+  <!--<link rel="stylesheet" href="css/ekko-lightbox.css" />-->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/ekko-lightbox.css') }}">
+  <!-- font awesome style -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <!--<link href="css/font-awesome.min.css" rel="stylesheet" />-->
+  <!-- Custom styles for this template -->
+<!--  <link href="css/style.css" rel="stylesheet" />-->
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+  <!-- responsive style -->
+  <!--<link href="css/responsive.css" rel="stylesheet" />-->
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/responsive.css') }}">
+
+<style>
+  video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      /* Make sure the video is behind other elements */
+      transform: translate(-50%, -50%);
+      /* Center the video */
+    }
+/* Custom CSS for navbar */
+
+/* Nav Box */
+.nav-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    margin-right: 30px; /* Add space between boxes */
+}
+
+/* Home Button */
+.home-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #0d0c0c; /* Set text color to black */
+}
+
+/* Regions Button */
+.regions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+/* Predictions Button */
+.predictions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+/* Blog Button */
+.blog-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+.container {
+  padding: 100px;
+}
+    .region-box {
+    background-color: #01271F; /* Use the specified color */
+    width: 300px;
+    height: 200px;
+    color: white;
+    margin: 50px;
+    padding: 50px;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif; /* Change the font style */
+}
+
+.region-box:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: white;
+    transform: scale(1.1);
+}
+
+.region-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+</style>
+</head>
+
+<body>
+  <video autoplay muted loop id="bgvid">
+    <source src="https://media.istockphoto.com/id/991198930/video/asia-india-on-world-map.mp4?s=mp4-640x640-is&k=20&c=Pl2lChkaCApoObVb6VnbetpktpHF8nbwwwovRWr4-WU=" type="video/mp4">
+  </video>
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <p style="font-size:xx-large;color: rgb(241, 240, 240);background-color:#3a3f58 ;">
+        Unveiling Renewable energy capacity across Indian States
+    </p>
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="navbar-brand">
+          
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </br>
+  <section>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <div class="nav-box" >
+                    <a class="nav-link home-btn" href="/" >Home</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link regions-btn" href="Regions">Regions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link predictions-btn" href="Predictions">Predictions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link blog-btn" href="blog">Blog</a>
+                </div>
+            </li>
+        </ul>
+        
+        
+        </div>
+      </nav>
+    </section>
+    </div>
+  </header>
+  <!-- end header section -->
+
+
+  <div class="container">
+	<div class="row">
+		
+	  <div class="col-sm-6">
+		  <div class="region-box">
+		<a href="north"><h1>North Region</h1></a>
+		</div>
+		</div>
+		<div class="col-sm-6">
+		<div class="region-box">
+		<a href="south"><h1>South Region</h1></a>
+		</div>
+		
+		</div>
+		
+		<div class="col-sm-6">
+		  <div class="region-box">
+		<a href="east"><h1>East Region</h1></a>
+		</div>
+		</div>
+		<div class="col-sm-6">
+		<div class="region-box">
+		<a href="west"><h1>West Region</h1></a>
+		</div>
+		
+		</div>
+	  
+	  
+	  </div>
+	
+	</div>
+
+ 
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="">GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  
+
+
+<script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/ekko-lightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  
+</body>
+
+</html>

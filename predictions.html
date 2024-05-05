@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+  <title>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</title>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ekko-lightbox.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/responsive.css') }}">
+
+  <style>
+    video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  /* Make sure the video is behind other elements */
+  transform: translate(-50%, -50%);
+  /* Center the video */
+}
+.nav-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    margin-right: 30px; /* Add space between boxes */
+}
+
+/* Home Button */
+.home-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #0d0c0c; /* Set text color to black */
+}
+
+/* Regions Button */
+.regions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+/* Predictions Button */
+.predictions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+
+/* Blog Button */
+.blog-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+    .form {
+      border: 1px solid none;
+      margin: 100px auto; /* Center the form horizontally */
+      height: 400px;
+      width: 500px; /* Increased form width */
+      text-align: center;
+      padding-top: 100px;
+      overflow: hidden;
+      border-radius: 50px;
+      background-color: #01271F; /* Changed background color */
+      box-shadow: 5px 15px 40px 0px rgb(2, 102, 96);
+      color: whitesmoke;
+  
+    }
+
+    .form label {
+      color: white; /* Set field names color to white */
+      font-size: 20px; /* Increase font size of input field names */
+      text-transform: uppercase; /* Convert text to uppercase */
+    }
+
+    form .f1 {
+      border: 1px solid none;
+      border-radius: 10px 10px 0px 0px;
+      height: 40px; /* Increased input field height */
+      width: 300px; /* Increased input field width */
+    }
+
+    form .f1:hover {
+      border: 1px solid aquamarine;
+    }
+
+    #active {
+      width: 200px; /* Increased button width */
+      height: 50px; /* Increased button height */
+      border-radius: 50px;
+      background-color: #01271F; /* Changed button background color */
+      color: #ddd;
+      font-size: 15px; /* Increased font size of Predict button */
+      margin-top: 10px; /* Brought the button a little down */
+    }
+  </style>
+</head>
+
+<body>
+  <video autoplay muted loop id="bgvid">
+    <source src="https://static.videezy.com/system/resources/previews/000/051/748/original/Infograph-line-and-top-point-on-black-screen.mp4" type="video/mp4">
+  </video>
+
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <p style="font-size:xx-large;color: rgb(241, 240, 240);background-color:#3a3f58 ;">
+        Unveiling Renewable energy capacity across Indian States
+    </p>
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="navbar-brand">
+          
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </br>
+  <section>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <div class="nav-box" >
+                    <a class="nav-link home-btn" href="/" >Home</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link regions-btn" href="Regions">Regions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link predictions-btn" href="Predictions">Predictions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link blog-btn" href="blog">Blog</a>
+                </div>
+            </li>
+        </ul>
+        
+        
+        </div>
+      </nav>
+    </section>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  </div>
+
+  </br></br></br></br>
+  <div class="form">
+    <form action="/predictpower" method="get">
+    State &nbsp;&nbsp;&nbsp;:&nbsp;<select name="state">
+      <option>None</option>
+      <option value="AP">Andhra Pradesh</option>
+      <option value="AR">Arunachal Pradesh</option>
+      <option value="AS">Assam</option>
+      <option value="BR">Bihar</option>
+      <option value="CT">Chhattisgarh</option>
+      <option value="GA">Gujarat</option>
+      <option value="HR">Haryana</option>
+      <option value="HP">Himachal Pradesh</option>
+      <option value="JK">Jammu and Kashmir</option>
+      <option value="GA">Goa</option>
+      <option value="JH">Jharkhand</option>
+      <option value="KA">Karnataka</option>
+      <option value="KL">Kerala</option>
+      <option value="MP">Madhya Pradesh</option>
+      <option value="MH">Maharashtra</option>
+      <option value="MN">Manipur</option>
+      <option value="ML">Meghalaya</option>
+      <option value="MZ">Mizoram</option>
+      <option value="NL">Nagaland</option>
+      <option value="OR">Odisha</option>
+      <option value="PB">Punjab</option>
+      <option value="RJ">Rajasthan</option>
+      <option value="SK">Sikkim</option>
+      <option value="TN">Tamil Nadu</option>
+      <option value="TG">Telangana</option>
+      <option value="TR">Tripura</option>
+      <option value="UT">Uttarakhand</option>
+      <option value="UP">Uttar Pradesh</option>
+      <option value="WB">West Bengal</option>
+      <option value="CH">Chandigarh</option>
+      <option value="DL">Delhi</option>
+    </select><br><br>
+    Power : <select name="power">
+      <option>None</option>
+<option value="solar">Solar</option>
+<option value="wind">Wind</option>
+<option value="biomass">Biomass</option>
+<option value="smallhydro">Small Hydro</option>
+    </select><br><br>
+    <input type="submit" value="Predict" id="active">
+    </form>
+</div>
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://www.GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN.ac.in/">GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/ekko-lightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+
+</body>
+
+</html>

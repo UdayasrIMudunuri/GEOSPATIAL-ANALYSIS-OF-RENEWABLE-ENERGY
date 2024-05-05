@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+  <title>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/ekko-lightbox.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.min.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/responsive.css') }}">
+<style>
+body {
+  background-image: url('data:image/jpeg;base64,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');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Custom CSS for navbar */
+.custom_nav-container .navbar-brand span {
+    font-size: 24px; /* Adjust the font size as needed */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: white; /* Set text color to white */
+}
+
+
+/* Nav Box */
+.nav-box {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    margin-right: 30px; /* Add space between boxes */
+}
+
+/* Home Button */
+.home-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #0d0c0c; /* Set text color to black */
+}
+
+/* Regions Button */
+.regions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+/* Predictions Button */
+.predictions-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+/* Blog Button */
+.blog-btn {
+    font-size: 18px; /* Adjust the font size */
+    text-transform: uppercase; /* Convert text to all caps */
+    font-weight: bold; /* Set font weight to bold */
+    color: #000000; /* Set text color to black */
+}
+
+
+/* Transparent container style */
+.transparent-container {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha (fourth) value for transparency */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-top: 20px; /* Optional: Add margin for spacing */
+}
+
+/* Flexbox style */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow containers to wrap onto the next line */
+}
+ /* Gap between containers */
+ .transparent-container + .transparent-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <p style="font-size:xx-large;color: rgb(241, 240, 240);background-color:#3a3f58 ;">
+        Unveiling Renewable energy capacity across Indian States
+    </p>
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="navbar-brand">
+          
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </br>
+  <section>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <div class="nav-box" >
+                    <a class="nav-link home-btn" href="/" >Home</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link regions-btn" href="Regions">Regions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link predictions-btn" href="Predictions">Predictions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-box">
+                    <a class="nav-link blog-btn" href="blog">Blog</a>
+                </div>
+            </li>
+        </ul>
+        
+        
+        </div>
+      </nav>
+    </section>
+    </div>
+  </header>
+
+  </br></br></br></br></br></br></br>
+  <!-- end header section -->
+  <h3 style="text-transform: uppercase; color: white;text-align:center;"><b>EXPLORE HOW ALGORITHMS POWER OUR PROJECT'S PREDICTIONS AND INSIGHTS.</b></h3>
+
+  <div class="container">
+
+    <div class="transparent-container">
+    <h3>Random Forest Regressor:</h3>
+   <div>
+    The Random Forest Regressor initializes with hyperparameters like the number of trees, maximum depth, and minimum samples to split a node. It employs bootstrapping, creating bootstrap samples for each tree, followed by feature randomization to introduce diversity. Each tree builds upon a bootstrap sample, selecting features for node splits. Predictions from all trees are aggregated, typically through averaging, culminating in the final prediction. This approach yields robust and accurate predictions by leveraging the collective wisdom of multiple decision trees.</div>
+    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjc0hGdARwN26lE0U-hfwGZnTUpfLtfU5ZBYM7zAag0A&s" alt="Random Forest Image">-->
+</div>
+    <div class="transparent-container">
+    <h3>XGBoost Regressor:</h3>
+    
+    <div>
+      The XGBoost Regressor begins by initializing hyperparameters like boosting rounds, learning rate, and tree depth. It sequentially builds decision trees to correct errors from previous rounds, optimizing parameters through gradient descent. XGBoost handles imbalanced data by adjusting class imbalance parameters, enhancing performance on minority classes. Once trained, it generates predictions based on learned patterns, offering accurate estimations for test data.</div>
+      <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjc0hGdARwN26lE0U-hfwGZnTUpfLtfU5ZBYM7zAag0A&s" alt="Random Forest Image">-->
+  </div>
+    <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjc0hGdARwN26lE0U-hfwGZnTUpfLtfU5ZBYM7zAag0A&s" alt="Random Forest Image">-->
+  </div>
+  <div class="transparent-container">
+    <h3>MLP Regressor (Neural Network):</h3>
+    <div>
+      The MLP Regressor is initialized by defining hidden layers, neuron counts, and activation functions. Through forward propagation, inputs traverse the network, with each neuron calculating and applying activations. Errors between predicted and actual outputs are computed and propagated backward, updating neuron weights and biases via gradient descent. Iterative weight and bias updates aim to minimize the loss function, refining predictions. Activation functions like ReLU and sigmoid are specified to introduce non-linearity during initialization.
+    </div>
+  <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjc0hGdARwN26lE0U-hfwGZnTUpfLtfU5ZBYM7zAag0A&s" alt="Random Forest Image">-->
+
+</div>
+<div class="transparent-container">
+    <h3>Model Performance Evaluation:</h3>
+    <p>To effectively assess the models' performance, the historical data underwent partitioning into training and
+        testing sets. The training set was utilized to train the models, while the testing set was employed to
+        validate their accuracy and generalizability. Various metrics, including Mean Squared Error (MSE), Root
+        Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE), and R-squared (R2) score, were employed
+        to evaluate the performance of each model. These metrics played a crucial role in determining the models'
+        capability to accurately forecast renewable energy generation.</p>
+</div>
+ 
+  </div>
+ 
+
+  
+
+  <!-- end blog section -->
+
+  <!-- info section -->
+  <section class="info_section innerpage_info_section">
+    <div class="container">
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              <a href="index.html" class="navbar-brand m-0 p-0">
+                <span>
+                  GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN
+                </span>
+              </a>
+            </h4>
+            <p class="mb-0">
+              gvpcew
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>
+              
+            </h4>
+            <p class="mb-0">
+              
+            </p>
+          </div>
+        </div>
+       <div class="col-md-6 col-lg-3 mt-3">
+
+       </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Follow Us
+          </h4>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://www.GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN.ac.in/">GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+<script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/ekko-lightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  
+</body>
+
+</html>

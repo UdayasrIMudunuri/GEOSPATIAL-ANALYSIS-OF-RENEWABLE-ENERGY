@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+  <title>Unveiling Renewable energy capacity across Indian States</title>
+
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/ekko-lightbox.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/responsive.css') }}">
+	
+	<style>
+	
+	section{
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 10px;
+    height: auto;
+    width: 400px;
+}
+aside{
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right,white,white,greenyellow,aqua , whitesmoke);
+    margin-left: 401px;
+    margin-top: -1210px;
+    height: auto;
+    width: 900px;
+}
+.region1{
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+}
+.region1 li{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.region1 li a{
+    text-decoration: none;
+    color: white;
+}
+.region1 li a:hover{
+    color: #00ff00;
+    text-shadow: 0 0 1px #00ff00;
+}
+	
+	</style>
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section innerpage_header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Unveiling Renewable energy capacity across Indian States
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="Regions">Regions</a>
+
+          
+                <a href="Predictions.html">Predictions</a>
+                <a href="blog.html">Blog</a>
+              </div>
+            </div>
+			
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+ <section>
+            <div class="region">
+              <h1 style="color:rgb(7, 7, 7) ;text-align: left;border-bottom: 2px solid rgb(10, 10, 10);padding-bottom: 5px;font-size: 10px;">EASTERN REGION</h1>
+            </div>
+            <ul class="region1">
+                <li><a href="Bihar">Bihar</a></li>
+                <li><a href="Jharkhand">Jharkhand</a></li>
+                <li><a href="Odisha">Odisha</a></li>
+                <li><a href="Sikkim">Sikkim</a></li>
+                <li><a href="WestBengal">West Bengal</a></li>
+                <li><a href="ArunachalPradesh">Arunachal Pradesh</a></li>
+                <li><a href="Assam">Assam</a></li>
+                <li><a href="Manipur">Manipur</a></li>
+                <li><a href="Meghalaya">Meghalaya</a></li>
+                <li><a href="Mizoram">Mizoram</a></li>
+                <li><a href="Nagaland">Nagaland</a></li>
+                <li><a href="Tripura">Tripura</a></li>
+            </ul>
+        </section>
+        <aside>
+          <style>
+            h1 {
+                font-size: 20px; /* Adjust the font size for h1 */
+            }
+        
+            h3 {
+                font-size: 16px; /* Adjust the font size for h3 */
+            }
+        </style>
+        <style>
+          img {
+              display: block; /* Set the display property to block */
+              margin: 0 auto; /* Set auto margins for centering */
+          }
+      </style>
+		<h1>BioMass</h1>
+		<h3>
+		
+		RMSE :{{fres[0]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		R<sup>2</sup>:{{fres[1]}}</h3>
+		
+		<img src="{{url_for('static', filename='biomass.jpg')}}" height=200/>
+		<h1>Solar</h1>
+		<h3>
+		
+		RMSE :{{fres[2]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+		
+		R<sup>2</sup>:{{fres[3]}}</h3>
+			<img src="{{url_for('static', filename='solar.jpg')}}"  height=200 /></br>
+			<h1>SmallHydro</h1>
+		<h3>
+		<!--MSE:{{fres[0]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+		RMSE :{{fres[4]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<!--MAPE :{{fres[2]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+		
+		R<sup>2</sup>:{{fres[5]}}</h3>
+			<img src="{{url_for('static', filename='SmallHydro.jpg')}}"  height=200/>
+<h1>Wind</h1>
+		<h3>
+		
+		RMSE :{{fres[6]}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		R<sup>2</sup>:{{fres[7]}}</h3>
+		<img src="{{url_for('static', filename='Wind.jpg')}}"  height=200/>
+        </aside>
+
+
+  
+
+
+  <!-- footer section -->
+    <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="">GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING FOR WOMEN</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+<script src="{{url_for('static', filename='js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/ekko-lightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+  
+</body>
+
+</html>
